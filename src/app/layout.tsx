@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import 'regenerator-runtime/runtime'
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -16,8 +17,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <script src="./node_modules/preline/dist/preline.js"></script>
-
       <body className={inter.className}>{children}</body>
     </html>
   );
